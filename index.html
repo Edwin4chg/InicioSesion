@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <h2 class="active">Iniciar Sesión</h2>
+            <div class="fadeIn first">
+                <img src="https://cdn-icons-png.flaticon.com/512/2550/2550359.png" id="icon" alt="Icono" />
+            </div>
+            <form id="loginForm">
+                <input type="text" id="username" class="fadeIn second" name="username" placeholder="Usuario">
+                <input type="text" id="mail" class="fadeIn third" name="mail" placeholder="Email">
+                <input type="button" class="fadeIn fourth" value="Iniciar Sesión" onclick="mostrarDatosUsuario()">
+            </form>
+        </div>
+    </div>
+
+    <div id="datosUsuario" style="display: none;">
+        <h3>Datos del Usuario:</h3>
+        <p><strong>Nombre de Usuario:</strong> <span id="nombreUsuario"></span></p>
+        <p><strong>Email:</strong> <span id="emailUsuario"></span></p>
+    </div>
+
+    <script src="js/js.js"></script>
+</body>
+</html>
